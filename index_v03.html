@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首頁 | netiCRM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="libs/mdl/material.min.css"> -->
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue-pink.min.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="libs/powertip/jquery.powertip.min.css">
+  <link rel="stylesheet" href="css/md.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="libs/mdl/material.min.js"></script>
+  <script src="libs/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="libs/powertip/jquery.powertip.min.js"></script>
+  <script src="js/md.js"></script>
+</head>
+<body class="sidebar-open header-fixed md-c1 md-c1-sw">
+  <div id="page">
+    <header id="header" class="header">
+      <a id="sidebar-toggle" class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#" title="開闔側欄工具列">
+        <i class="zmdi zmdi-menu"></i>
+      </a>
+
+      <ul id="neticrm-menu" class="menu horizontal-menu dropdown-menu neticrm-menu">
+        <li class="menu-294 first"><a href="#" class="civicrm-contact">聯絡人</a>
+        <ul class="links">
+          <li class="menu-295 first"><a href="#">新增/管理網站使用者</a></li>
+          <li class="menu-297"><a href="#">新增個人</a></li>
+          <li class="menu-296"><a href="#">權限管理</a></li>
+          <li class="menu-298"><a href="#">新增組織</a></li>
+          <li class="menu-299"><a href="#">新增家庭</a></li>
+          <li class="menu-300"><a href="#">寄送 Email</a></li>
+          <li class="menu-301"><a href="#">匯入聯絡人資料</a></li>
+          <li class="menu-302"><a href="#">新增/管理群組</a></li>
+          <li class="menu-303"><a href="#">新增/管理標籤</a></li>
+          <li class="menu-304"><a href="#">新增任務</a></li>
+          <li class="menu-305"><a href="#">搜尋任務</a></li>
+          <li class="menu-306"><a href="#">匯入任務記錄</a></li>
+          <li class="menu-307"><a href="#">合併重複聯絡人</a></li>
+          <li class="menu-308"><a href="#">新增/管理關係類型</a></li>
+          <li class="menu-310"><a href="#">新增/管理自訂欄位</a></li>
+          <li class="menu-309 last"><a href="#">新增/管理資料表單</a></li>
+        </ul>
+        </li>
+        <li class="menu-311"><a href="#" class="civicrm-contribute">捐款</a>
+        <ul class="links">
+          <li class="menu-313 first"><a href="#">新增捐款</a></li>
+          <li class="menu-314"><a href="#">搜尋捐款</a></li>
+          <li class="menu-315"><a href="#">匯入捐款資料</a></li>
+          <li class="menu-316"><a href="#">認捐總覽</a></li>
+          <li class="menu-317"><a href="#">新增認捐</a></li>
+          <li class="menu-318"><a href="#">搜尋認捐</a></li>
+          <li class="menu-319"><a href="#">新增募款頁</a></li>
+          <li class="menu-320"><a href="#">管理募款頁</a></li>
+          <li class="menu-321"><a href="#">個人募款頁</a></li>
+          <li class="menu-322"><a href="#">新增/管理感謝禮品</a></li>
+          <li class="menu-323"><a href="#">新增價格表</a></li>
+          <li class="menu-324"><a href="#">管理價格表</a></li>
+          <li class="menu-325"><a href="#">新增/管理捐款類型</a></li>
+          <li class="menu-312 last"><a href="#">新增/管理付款工具</a></li>
+        </ul>
+        </li>
+        <li class="menu-326"><a href="#" class="civicrm-event">活動</a>
+        <ul class="links">
+          <li class="menu-330 first"><a href="#">登記活動參加者</a></li>
+          <li class="menu-331"><a href="#">搜尋活動參加者</a></li>
+          <li class="menu-332"><a href="#">匯入參加者</a></li>
+          <li class="menu-333"><a href="#">新增活動</a></li>
+          <li class="menu-334"><a href="#">管理活動</a></li>
+          <li class="menu-335"><a href="#">活動範本</a></li>
+          <li class="menu-336"><a href="#">新增價格表</a></li>
+          <li class="menu-337"><a href="#">管理價格表</a></li>
+          <li class="menu-327"><a href="#">新增/管理活動類型</a></li>
+          <li class="menu-328"><a href="#">新增/管理參加者狀態</a></li>
+          <li class="menu-329 last"><a href="#">新增/管理參加者角色</a></li>
+        </ul>
+        </li>
+        <li class="menu-338"><a href="#" class="civicrm-mailing">電子報</a>
+        <ul class="links">
+          <li class="menu-339 first"><a href="#">新增電子報/郵件</a></li>
+          <li class="menu-340"><a href="#">草稿與未排程的電子報</a></li>
+          <li class="menu-341"><a href="#">已排程與已寄送的電子報</a></li>
+          <li class="menu-342"><a href="#">電子報存檔</a></li>
+          <li class="menu-343"><a href="#">頁首、頁尾、自動回覆訊息</a></li>
+          <li class="menu-344"><a href="#">訊息範本</a></li>
+          <li class="menu-345"><a href="#">Email寄件者</a></li>
+          <li class="menu-346 last"><a href="#">Email問候語</a></li>
+        </ul>
+        </li>
+        <li class="menu-347"><a href="#" class="civicrm-member">會員</a>
+        <ul class="links">
+          <li class="menu-348 first"><a href="#">新增會員資料</a></li>
+          <li class="menu-349"><a href="#">搜尋會員</a></li>
+          <li class="menu-350"><a href="#">匯入會員</a></li>
+          <li class="menu-351"><a href="#">新增/編輯會員類型</a></li>
+          <li class="menu-352 last"><a href="#">新增/編輯會員狀態</a></li>
+        </ul>
+        </li>
+        <li class="menu-353 last"><a href="#" class="civicrm-report">報表</a>
+        <ul class="links">
+          <li class="menu-355 first"><a href="#">報表範本管理</a></li>
+          <li class="menu-354 last"><a href="#">從範本新增報表</a></li>
+        </ul>
+        </li>
+      </ul>
+
+      <a id="user-menu-toggle" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+        <span class="org-name">網絡行動餐車</span>
+        <i class="zmdi zmdi-chevron-down"></i>
+        <i class="zmdi zmdi-account-circle"></i>
+      </a>
+      <ul id="user-menu" class="mdl-menu mdl-js-menu" for="user-menu-toggle">
+        <li class="mdl-menu__item mdl-menu__item_nohover um-username"><i class="zmdi zmdi-account"></i>manager</li>
+        <li class="mdl-menu__item um-account"><a href="#">帳號設定</a></li>
+        <li class="mdl-menu__item um-logout"><a href="#">登出</a></li>
+      </ul>
+
+      <ul id="secondary-menu" class="menu horizontal-menu user-menu">
+        <li class="menu-234 first"><a href="#" title="進階設定、管理支持者系統的欄位選項等">設定</a></li>
+        <li class="menu-237"><a href="http://neticrm.tw/support" target="_blank" title="線上支援">線上支援</a></li>
+        <li class="menu-235"><a href="#" title="我的帳號">我的帳號</a></li>
+        <li class="menu-5"><a href="#" title="新增內容">新增內容</a></li>
+        <li class="menu-236"><a href="#" title="登出">登出</a></li>
+        <li class="menu-4 active-trail last"><a href="#" class="active-trail"></a></li>
+      </ul>
+    </header>
+
+    <div id="main" class="main">
+      <div id="content-header" class="content">
+        <div class="breadcrumb"><a href="#">首頁</a> » <a href="#">入門指南 / 儀表板</a></div>
+        <h1 class="page-title">歡迎使用 netiCRM <i class="zmdi zmdi-mood"></i></h1>
+      </div>
+
+      <div id="main-tabs" class="main-tabs">
+        <h2 class="element-invisible">主要索引標籤</h2><ul class="tabs primary">
+        <li class="active"><a href="#" class="active"><span class="tab">入門指南</span><span class="element-invisible">(作用中頁籤)</span></a></li>
+        <li><a href="#"><span class="tab">儀表板</span></a></li>
+        </ul>
+      </div>
+
+      <div id="content" class="content">
+
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-header">
+          <a id="home" href="#"><span>n</span><span class="sidebar-mini-hide">etiCRM</span></a>
+        </div>
+        <div class="sidebar-content">
+
+          <div id="side-dashboard" class="side-item side-item-active">
+            <h3 class="side-item-title"><a href="/"><i class="zmdi zmdi-view-dashboard"></i><span class="sidebar-mini-hide">指南／儀表板</span></a></h3>
+          </div>
+
+          <div id="side-quick-search" class="side-item js-accordion accordion-open">
+            <h3 class="side-item-title"><a href="#"><i class="zmdi zmdi-search"></i><span class="sidebar-mini-hide">快速搜尋</span></a></h3>
+            <div class="side-item-content">
+               <div id="crm-qsearch" class="menumain">
+                <form action="/civicrm/contact/search/basic" name="search_block" id="id_search_block" method="post" onsubmit="getSearchURLValue( );">
+                  <div id="neticrm-quickSearch">
+                    <input type="text" class="form-text ac_input md-form-text" id="neticrm_sort_name_navigation" name="sort_name" value="" autocomplete="off" placeholder="請輸入部分Email或姓名">
+                    <input type="hidden" id="sort_contact_id" value="">
+                    <input type="submit" value="Search" name="_qf_Basic_refresh" class="form-submit default" style="display: none;">
+                  </div>
+                </form>
+              </div>
+              <ul id="search-menu" class="menu horizontal-menu">
+                <li class="menu-359 first"><a href="/civicrm/contact/search/advanced?reset=1">進階搜尋</a></li>
+                <li class="menu-358"><a href="/civicrm/contact/search/custom?csid=15&amp;reset=1">全文搜尋</a></li>
+                <li class="menu-357 last"><a href="/civicrm/contact/search/builder?reset=1">自定搜尋</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item js-accordion accordion-open">
+            <h3 class="side-item-title"><a href="#"><i class="zmdi zmdi-sun"></i><span class="sidebar-mini-hide">開始使用netiCRM</span></a></h3>
+            <div class="side-item-content">
+              <ul id="home-start-menu">
+                <li><a href="#" title="新增聯絡人">新增聯絡人</a></li>
+                <li><a href="#" title="匯入聯絡人">匯入聯絡人</a></li>
+                <li><a href="#" title="設定聯絡人群組">設定聯絡人群組</a></li>
+                <li><a href="#" title="建立表單">建立表單</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="side-item js-accordion accordion-open ">
+            <h3 class="side-item-title"><a href="#"><i class="zmdi zmdi-wrench"></i><span class="sidebar-mini-hide">網站管理員設定</span></a></h3>
+            <div class="side-item-content">
+              <ul class="menu"><li class="first leaf 網站資訊 mid-395"><a href="/admin/config/system/site-information">網站資訊</a></li>
+                <li class="leaf 管理網站使用者 mid-396"><a href="/admin/people">管理網站使用者</a></li>
+                <li class="leaf 權限設定 mid-397"><a href="/admin/people/permissions">權限設定</a></li>
+                <li class="leaf 版型 mid-398"><a href="/admin/appearance">版型</a></li>
+                <li class="leaf 底部選單 mid-399"><a href="/admin/structure/menu/manage/menu-footer">底部選單</a></li>
+                <li class="last leaf 網站logo mid-400"><a href="/admin/appearance/settings">網站Logo</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="side-recently-viewed" class="side-item js-accordion accordion-open ">
+            <h3 class="side-item-title"><a href="#"><i class="zmdi zmdi-time"></i><span class="sidebar-mini-hide">最近項目</span></a></h3>
+            <div class="side-item-content">
+              <ul>
+                <li class="crm-recently-viewed crm-processed"><a href="/civicrm/contact/view?reset=1&amp;cid=217" title="朱測試">
+                <span class="icon crm-icon Individual-icon"></span>
+                朱測試</a>
+                <ul class="crm-recentview-wrapper" style="display:none;">
+                  <li><br>
+                  <a href="/civicrm/contact/view?reset=1&amp;cid=217">查看</a> &nbsp; <a href="/civicrm/contact/add?reset=1&amp;action=update&amp;cid=217">編輯</a> &nbsp; <a href="/civicrm/contact/view/delete?reset=1&amp;delete=1&amp;cid=217">刪除</a> &nbsp; </li>
+                </ul>
+                </li>
+                <li class="crm-recently-viewed crm-processed"><a href="/civicrm/contact/view/membership?action=view&amp;reset=1&amp;id=4&amp;cid=217&amp;context=home" title="朱測試 - 會員類型： 步道之友">
+                <span class="icon crm-icon Membership-icon"></span>
+                朱測試 - 會員類型： 步道之友</a>
+                <ul class="crm-recentview-wrapper" style="display:none;">
+                  <li><br>
+                  <a href="/civicrm/contact/view/membership?action=view&amp;reset=1&amp;id=4&amp;cid=217&amp;context=home">查看</a> &nbsp; <a href="/civicrm/contact/view/membership?action=update&amp;reset=1&amp;id=4&amp;cid=217&amp;context=home">編輯</a> &nbsp; <a href="/civicrm/contact/view/membership?action=delete&amp;reset=1&amp;id=4&amp;cid=217&amp;context=home">刪除</a> &nbsp; </li>
+                </ul>
+                </li>
+                <li class="crm-recently-viewed crm-processed"><a href="/civicrm/contact/view?reset=1&amp;cid=212" title="關容">
+                <span class="icon crm-icon Individual-icon"></span>
+                關容</a>
+                <ul class="crm-recentview-wrapper" style="display:none;">
+                  <li><br>
+                  <a href="/civicrm/contact/view?reset=1&amp;cid=212">查看</a> &nbsp; <a href="/civicrm/contact/add?reset=1&amp;action=update&amp;cid=212">編輯</a> &nbsp; </li>
+                </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="neticrm-footer-left">
+        <div class="item-list">
+          <ul>
+            <li class="first"><strong>已使用 2%</strong></li>
+            <li class="last">已使用194207人，總共9999999人</li>
+          </ul>
+        </div>
+      </div>
+      <div class="neticrm-footer-right">
+        <div class="item-list">
+          <ul>
+            <li class="first">大型組織（年計） 方案 (2012-12-01 開始)</li>
+            <li class="last">到期日 2015-11-30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="neticrm-footer-center">
+        CiviCRM 是一套採用 <a href="http://www.gnu.org/licenses/agpl-3.0.html" target="_blank"><abbr title="GNU Affero General Public License">GNU AGPL</abbr></a> 授權的自由軟體<br>
+        您所使用的中文優化版由 <a href="http://neticrm.tw" target="_blank"><abbr title="NETivism-由數位公益出發的社會企業">網絡行動科技</abbr></a> 提供<br>
+        Powered by <a href="http://drupaltaiwan.org" target="_blank">Drupal</a> &amp; <a href="http://civicrm.tw" target="_blank">CiviCRM</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
