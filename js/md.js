@@ -176,6 +176,9 @@
     $(".js-powertip-se-alt").powerTip({
       placement: 'se-alt',
     });
+    $(".js-powertip-w").powerTip({
+      placement: 'w',
+    });
   }
 
   var dontJumpTop = function() {
