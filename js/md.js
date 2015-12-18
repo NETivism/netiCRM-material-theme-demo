@@ -179,6 +179,8 @@
     $(".js-powertip-w").powerTip({
       placement: 'w',
     });
+
+    // $('#contact-sum-signal').data('powertiptarget', 'myToolTip');
   }
 
   var dontJumpTop = function() {
