@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="libs/powertip/jquery.powertip.min.css">
-  <link rel="stylesheet" href="css/md_v09.css">
+  <link rel="stylesheet" href="css/md_v08.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="libs/mdl/material.min.js"></script>
   <script src="libs/slimscroll/jquery.slimscroll.min.js"></script>
@@ -127,23 +126,26 @@
         </li>
       </ul>
 
+      <div id="header-help"><a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect js-powertip-se-alt" title="線上支援"><i class="zmdi zmdi-help-outline"></i></a></div>
+
       <div id="contact-sum-signal" class="js-powertip-se-alt" data-powertip="&lt;div class=&quot;icon-wtext container&quot;&gt;&lt;i class=&quot;zmdi zmdi-alert-triangle&quot;&gt;&lt;/i&gt;&lt;p&gt;目前聯絡人數量已達 &lt;span class=&quot;tag is-warning&quot;&gt;86%&lt;/span&gt;，建議您可進行合併重複聯絡人，或找出少有互動、貢獻度較低的聯絡人，以精簡貴組織的聯絡人數量。或利用客服系統向我們提出升級（若能抓出升到哪一種會籍，年費多少更好）。&lt;/p&gt;&lt;div class=&quot;cs-info&quot;&gt;已使用 194207 人，總共 9999999 人&lt;/div&gt;&lt;/div&gt;"><div class="cs-pool cs-pool-warning mdl-badge" data-badge="!" data-cs-percentage="86">86%</div></div>
 
       <div id="member-status-signal" class="js-powertip-se-alt" data-powertip="&lt;div class=&quot;icon-wtext container&quot;&gt;&lt;i class=&quot;zmdi zmdi-alert-triangle&quot;&gt;&lt;/i&gt;&lt;p&gt;您目前的會籍狀態為 &lt;span class=&quot;tag is-warning&quot;&gt;已過期&lt;/span&gt;，請使用客服系統與我們聯繫並進行繳費。&lt;/p&gt;&lt;div class=&quot;cs-info&quot;&gt;大型組織（年計）方案&lt;br&gt;2012-12-01 開始，到期日 2015-11-30&lt;/div&gt;&lt;/div&gt;"><span class="tag is-warning">已過期</span></div>
 
       <a id="user-menu-toggle" class="mdl-button mdl-js-button mdl-js-ripple-effect js-powertip-w" title="帳號設定與登出">
-        <span class="user-name">username</span>
+        <span class="org-name">台灣環境資訊協會- 捐款者, 志工暨會員服務系統</span>
         <i class="zmdi zmdi-chevron-down"></i>
         <!--<i class="zmdi zmdi-account-circle"></i>-->
       </a>
       <ul id="user-menu" class="mdl-menu mdl-menu--bottom-right mdl-js-menu" for="user-menu-toggle">
+        <li class="mdl-menu__item mdl-menu__item_nohover um-username"><i class="zmdi zmdi-account"></i>manager</li>
         <li class="mdl-menu__item um-account"><a href="#">帳號設定</a></li>
         <li class="mdl-menu__item um-logout"><a href="#">登出</a></li>
       </ul>
 
 
 
-
+      <!--
       <ul id="secondary-menu" class="menu horizontal-menu user-menu">
         <li class="menu-234 first"><a href="#" title="進階設定、管理支持者系統的欄位選項等">設定</a></li>
         <li class="menu-237"><a href="http://neticrm.tw/support" target="_blank" title="線上支援">線上支援</a></li>
@@ -152,12 +154,12 @@
         <li class="menu-236"><a href="#" title="登出">登出</a></li>
         <li class="menu-4 active-trail last"><a href="#" class="active-trail"></a></li>
       </ul>
-
+      -->
     </header>
 
     <div id="main" class="main">
       <div id="content-header" class="content">
-        <div class="breadcrumb"><a href="#">台灣環境資訊協會- 捐款者, 志工暨會員服務系統</a> » <a href="#">新手上路 / 儀表板</a></div>
+        <div class="breadcrumb"><a href="#">首頁</a> » <a href="#">新手上路 / 儀表板</a></div>
         <h1 class="page-title">歡迎使用 netiCRM <i class="zmdi zmdi-mood"></i></h1>
         <div class="p-use-date">
           <div class="item-list">
@@ -322,14 +324,14 @@
           </div>
 
           <div id="side-quick-search" class="side-item js-accordion accordion-open">
-            <h3 class="side-item-title"><a href="#"><i class="zmdi zmdi-search"></i><span class="sidebar-mini-hide">快速搜尋</span></a></h3>
+            <h3 class="side-item-title"><a href="#"><i class="zmdi zmdi-eye"></i><span class="sidebar-mini-hide">快速搜尋</span></a></h3>
             <div class="side-item-content">
                <div id="crm-qsearch" class="menumain">
                 <form action="/civicrm/contact/search/basic" name="search_block" id="id_search_block" method="post" onsubmit="getSearchURLValue( );">
                   <div id="neticrm-quickSearch">
                     <input type="text" class="form-text ac_input md-form-text" id="neticrm_sort_name_navigation" name="sort_name" value="" autocomplete="off" placeholder="請輸入部分Email或姓名">
                     <input type="hidden" id="sort_contact_id" value="">
-                    <button type="submit" name="_qf_Basic_refresh" class="form-submit default"><i class="zmdi zmdi-search zmdi-hc-flip-horizontal"></i></button>
+                    <button type="submit" name="_qf_Basic_refresh" class="form-submit default"><i class="zmdi zmdi-search"></i></button>
                     <!--<input type="submit" value="Search" name="_qf_Basic_refresh" class="form-submit default">-->
                   </div>
                 </form>
@@ -350,6 +352,7 @@
                 <li><a href="#" title="匯入聯絡人">匯入聯絡人</a></li>
                 <li><a href="#" title="設定聯絡人群組">設定聯絡人群組</a></li>
                 <li><a href="#" title="建立表單">建立表單</a></li>
+                <li><a href="#" title="CRM 功能總覽">CRM 功能總覽</a></li>
               </ul>
             </div>
           </div>
@@ -359,6 +362,7 @@
             <div class="side-item-content">
               <ul class="menu">
                 <li class="first leaf 網站資訊 mid-395"><a href="/admin/config/system/site-information">網站資訊</a></li>
+                <li class="leaf 新增頁面 mid-395"><a href="/admin/config/system/site-information">新增頁面</a></li>
                 <li class="leaf 管理網站使用者 mid-396"><a href="/admin/people">管理網站使用者</a></li>
                 <li class="leaf 權限設定 mid-397"><a href="/admin/people/permissions">權限設定</a></li>
                 <li class="leaf 版型 mid-398"><a href="/admin/appearance">版型</a></li>
